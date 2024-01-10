@@ -10,6 +10,8 @@ struct RegistrationView: View {
         return passwordStrength == .strong && !username.isEmpty && password == confirmPassword
     }
     
+    // MARK: - body
+    
     var body: some View {
         VStack {
             TextField("Username", text: $username)
